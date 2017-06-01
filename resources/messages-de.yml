@@ -73,13 +73,13 @@ cmds:
     messages: 
       successfully_reloaded: "Alle Einstellungen von PurePerms wurden erfolgreich neu geladen."
   ppsudo:
-    desc: "Registriert oder loggt dich in deinen Noeul Account ein."
+    desc: "Registriere oder logge dich in deinen Noeul Account ein."
     usage: "Benutzung: /ppsudo <login / register>"
     messages:
       already_registered: "Dieser Account ist bereits registriert."
       deauth_01: "Dieser Server nutzt Noeul v%var0% um deinen Account zu beschützen."
       deauth_02: "Du musst deinen Account zuerst authentifizieren."
-      deauth_03: "Bitte registriere oder logge dich in deinen Account mit /ppsudo command ein."
+      deauth_03: "Bitte registriere oder logge dich in deinen Account mit /ppsudo ein."
       invalid_sender: "Dieser Command kann nur im Spiel ausgeführt werden."
       login_usage: "Benutzung: /ppsudo login <passwort>"
       not_registered: "Dieser Account ist nicht registriert."
