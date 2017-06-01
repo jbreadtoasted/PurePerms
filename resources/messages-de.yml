@@ -1,5 +1,5 @@
 
-# PurePerms von 64FF00 (xktiverz@gmail.com, @64ff00 für Twitter)
+# PurePerms von 64FF00 (xktiverz@gmail.com, @64FF00 auf Twitter)
 
 # Original German language resource by @Exxarion, reworked by @thebigsmileXD
 
@@ -73,28 +73,28 @@ cmds:
     messages: 
       successfully_reloaded: "Alle Einstellungen von PurePerms wurden erfolgreich neu geladen."
   ppsudo:
-    desc: "Registers or logs into your Noeul account."
-    usage: "Usage: /ppsudo <login / register>"
+    desc: "Registriert oder loggt dich in deinen Noeul Account ein."
+    usage: "Benutzung: /ppsudo <login / register>"
     messages:
-      already_registered: "This account is already registered."
-      deauth_01: "This server uses Noeul v%var0% to protect your account."
-      deauth_02: "You must authenticate your account first."
-      deauth_03: "Please register or login to your account using /ppsudo command"
-      invalid_sender: "This command should be only used in-game."
-      login_usage: "Usage: /ppsudo login <password>"
-      not_registered: "This account is not registered."
-      password_too_short: "Your password does NOT meet minimum length (%var0%) requirements."
-      register_usage: "Usage: /ppsudo register <password>"
-      successfully_logged_in: "You are now logged in."	 
-      successfully_registered: "Your account has been successfully registered."
-      unregister_usage: "Usage: /ppsudo unregister <password>" 
+      already_registered: "Dieser Account ist bereits registriert."
+      deauth_01: "Dieser Server nutzt Noeul v%var0% um deinen Account zu beschützen."
+      deauth_02: "Du musst deinen Account zuerst authentifizieren."
+      deauth_03: "Bitte registriere oder logge dich in deinen Account mit /ppsudo command ein."
+      invalid_sender: "Dieser Command kann nur im Spiel ausgeführt werden."
+      login_usage: "Benutzung: /ppsudo login <passwort>"
+      not_registered: "Dieser Account ist nicht registriert."
+      password_too_short: "Dein Passwort erfüllt micht die Mindestlänge von (%var0%)."
+      register_usage: "Benutzung: /ppsudo register <passwort>"
+      successfully_logged_in: "Du bist nun eingeloggt."	 
+      successfully_registered: "Dein Account wurde erfolgreich eingerichtet."
+      unregister_usage: "Benutzung: /ppsudo unregister <passwort>" 
   rmgroup: 
     desc: "Entfernt eine Gruppe von der Gruppenliste."
     usage: "Benutzung: /rmgroup <Gruppe>"
     messages:
       group_removed_successfully: "%var0% wurde erfolgreich von der Gruppenliste entfernt."
       group_not_exist: "Gruppe %var0% existiert NICHT."
-      invalid_group_name: "Invalid Group Name."
+      invalid_group_name: "Ungültiger Gruppenname."
   rmparent:
     desc: "Removes a group from another group inheritance list."
     usage: "Usage: /rmparent <target_group> <parent_group>"
@@ -111,8 +111,8 @@ cmds:
     desc: "Setzt eine Gruppe für einen Spieler."
     usage: "Benutzung: /setgroup <Spieler> <Gruppe> <exp_time> [Welt]"
     messages:
-      access_denied_01: "You don't have permission to set a player's group to %var0%."
-      access_denied_02: "You don't have permission to change group of a player with group %var0%."        
+      access_denied_01: "Du hast keine Berechtigung, die Gruppe des Spielers auf diese zu ändern: %var0%."
+      access_denied_02: "Du hast keine Berechtigung die Gruppe eines anderen Spielers mit der Gruppe zu ändern: %var0%."        
       group_not_exist: "Gruppe %var0% existiert NICHT."
       level_not_exist: "Welt %var0% existiert NICHT."
       on_player_group_change: "Deine PurePerms-Gruppe wurde zu %var0% geändert!"
@@ -167,5 +167,5 @@ logger_messages:
   setProvider_YAMLv2: "Datenprovider wird auf YAMLv2 gesetzt."
   setProvider_NotFound: "Provider %var0% existiert NICHT. Datenprovider wird auf Standard zurückgesetzt."
   unregisterPlayer: "Spieler %var0% wird abgemeldet"
-  YAMLProvider_InvalidGroupsSettings: "INVALID GROUPS.YML SETTINGS: Please check if you have an invalid or corrupted groups.yml."
+  YAMLProvider_InvalidGroupsSettings: "UNGÜLUTIGE GROUPS.YML EINSTELLUNGEN: Bitte überprüfe, ob die Datei groups.yml beschädigt oder ungültig ist!"
 ...
