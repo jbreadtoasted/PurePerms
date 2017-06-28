@@ -7,7 +7,7 @@ use _64FF00\PurePerms\event\PPRankExpiredEvent;
 use pocketmine\event\Listener;
 use pocketmine\event\entity\EntityLevelChangeEvent;
 use pocketmine\event\player\PlayerCommandPreprocessEvent;
-use pocketmine\event\player\PlayerJoinEvent;
+use pocketmine\event\player\PlayerLoginEvent;
 use pocketmine\event\player\PlayerPreLoginEvent;
 use pocketmine\event\player\PlayerQuitEvent;
 use pocketmine\event\TranslationContainer;
@@ -121,7 +121,7 @@ class PPListener implements Listener
      * @param PlayerLoginEvent $event
      * @priority LOWEST
      */
-    public function onPlayerLogin(PlayerJoinEvent $event)
+    public function onPlayerLogin(PlayerLoginEvent $event)
     {
         $player = $event->getPlayer();
 
