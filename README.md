@@ -4,4 +4,4 @@
 
 ![PurePerms](https://raw.githubusercontent.com/PurePlugins/PurePerms/master/PurePerms.png)
 
-...
+"Manage your permissions like you did on Bukkit"
