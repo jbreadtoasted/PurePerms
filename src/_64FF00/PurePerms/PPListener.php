@@ -102,7 +102,7 @@ class PPListener implements Listener
     }
 
     /**
-     * @param PlayerJoinEvent $event
+     * @param PlayerLoginEvent $event
      * @priority LOWEST
      */
     public function onPlayerLogin(PlayerLoginEvent $event)
