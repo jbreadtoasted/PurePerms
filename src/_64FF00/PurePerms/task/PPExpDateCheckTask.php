@@ -35,9 +35,9 @@ class PPExpDateCheckTask extends PluginTask
     }
 
     /**
-     * @param $currentTick
+     * @param int $currentTick
      */
-    public function onRun($currentTick)
+    public function onRun(int $currentTick)
     {
         foreach($this->plugin->getServer()->getOnlinePlayers() as $player)
         {

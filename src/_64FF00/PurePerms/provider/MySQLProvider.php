@@ -256,9 +256,9 @@ class MySQLProvider implements ProviderInterface
                 userGroup = VALUES(userGroup),
                 permissions = VALUES(permissions);");
 
-            if(isset($tempGroupData["worlds"]))
+            if(isset($tempUserData["worlds"]))
             {
-                foreach($tempGroupData["worlds"] as $worldName => $worldData)
+                foreach($tempUserData["worlds"] as $worldName => $worldData)
                 {
                     $worldGroup = $worldData["group"];
                     $worldPerms = implode(",", $worldData["permissions"]);

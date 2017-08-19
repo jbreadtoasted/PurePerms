@@ -24,7 +24,7 @@ class YamlV1Provider implements ProviderInterface
           888  888    "Y8888P"        888  888        888        "Y8888P"   "Y8888P"
     */
 
-    private $groups, $userDataFolder;
+    private $groups, $userDataFolder, $plugin;
 
     /**
      * @param PurePerms $plugin

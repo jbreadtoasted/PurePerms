@@ -121,9 +121,10 @@ class NoeulAPI
     }
 
     /**
+     * @param IPlayer $player
      * @return bool
      */
-    public function isRegistered($player)
+    public function isRegistered(IPlayer $player)
     {
         return !($this->plugin->getUserDataMgr()->getNode($player, 'noeulPW') === null);
     }

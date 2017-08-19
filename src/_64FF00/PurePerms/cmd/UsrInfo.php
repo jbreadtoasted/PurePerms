@@ -10,6 +10,7 @@ use pocketmine\command\PluginIdentifiableCommand;
 
 use pocketmine\Player;
 
+use pocketmine\plugin\Plugin;
 use pocketmine\utils\TextFormat;
 
 class UsrInfo extends Command implements PluginIdentifiableCommand
@@ -49,7 +50,7 @@ class UsrInfo extends Command implements PluginIdentifiableCommand
      * @param array $args
      * @return bool
      */
-    public function execute(CommandSender $sender, $label, array $args)
+    public function execute(CommandSender $sender, string $label, array $args)
     {
         if(!$this->testPermission($sender))
             return false;
@@ -99,7 +100,7 @@ class UsrInfo extends Command implements PluginIdentifiableCommand
         return true;
     }
     
-    public function getPlugin()
+    public function getPlugin() : Plugin
     {
         return $this->plugin;
     }

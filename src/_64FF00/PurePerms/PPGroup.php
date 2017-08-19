@@ -47,7 +47,7 @@ class PPGroup
     {
         $tempGroupData = $this->getData();
 
-        if($this == $group || in_array($this->getName(), $group->getParentGroups()))
+        if($this->getName() === $group->getName() || in_array($this->getName(), $group->getParentGroups()))
             return false;
 
         $tempGroupData["inheritance"][] = $group->getName();

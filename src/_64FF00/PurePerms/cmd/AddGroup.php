@@ -8,6 +8,7 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\command\PluginIdentifiableCommand;
 
+use pocketmine\plugin\Plugin;
 use pocketmine\utils\TextFormat;
 
 class AddGroup extends Command implements PluginIdentifiableCommand
@@ -47,7 +48,7 @@ class AddGroup extends Command implements PluginIdentifiableCommand
      * @param array $args
      * @return bool
      */
-    public function execute(CommandSender $sender, $label, array $args)
+    public function execute(CommandSender $sender, string $label, array $args)
     {
         if(!$this->testPermission($sender))
             return false;
@@ -77,7 +78,7 @@ class AddGroup extends Command implements PluginIdentifiableCommand
         return true;
     }
     
-    public function getPlugin()
+    public function getPlugin() : Plugin
     {
         return $this->plugin;
     }

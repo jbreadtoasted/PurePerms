@@ -50,7 +50,7 @@ class UserDataManager
 
     /**
      * @param IPlayer $player
-     * @param null $levelName
+     * @param string $levelName
      * @return PPGroup|null
      */
     public function getGroup(IPlayer $player, $levelName = null)
@@ -91,6 +91,7 @@ class UserDataManager
     }
 
     /**
+     * @param IPlayer $player
      * @param null $levelName
      * @return array
      */
