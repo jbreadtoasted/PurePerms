@@ -84,7 +84,7 @@ class DefaultProvider implements ProviderInterface
                 "group" => $this->plugin->getDefaultGroup()->getName(),
                 "permissions" => [],
                 "worlds" => [],
-                "time" => -1
+                "expTime" => -1
             ];
         }
 
@@ -138,7 +138,7 @@ class DefaultProvider implements ProviderInterface
                 "group" => $this->plugin->getDefaultGroup()->getName(),
                 "permissions" => [],
                 "worlds" => [],
-                "time" => -1
+                "expTime" => -1
             ]);
         }
 

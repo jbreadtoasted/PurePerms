@@ -230,7 +230,7 @@ class UserDataManager
                 "group" => $this->plugin->getDefaultGroup()->getName(),
                 "permissions" => [
                 ],
-                "expTime" => -1
+                "expTime" => $worldData["expTime"]
             ];
 
             $this->setData($player, $tempUserData);

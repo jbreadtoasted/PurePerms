@@ -41,13 +41,15 @@ class PPExpDateCheckTask extends PluginTask
     {
         foreach($this->plugin->getServer()->getOnlinePlayers() as $player)
         {
-            if(time() === $this->plugin->getUserDataMgr()->getNode($player, "expTime"))
-            {
-                $levelName = $this->plugin->getConfigValue("enable-multiworld-perms") ? $player->getLevel()->getName() : null;
+            if($this->plugin->getUserDataMgr()->getExpDate($player) !== -1){
+                if(time() >= $this->plugin->getUserDataMgr()->getExpDate($player))
+                {
+                    $levelName = $this->plugin->getConfigValue("enable-multiworld-perms") ? $player->getLevel()->getName() : null;
 
-                $event = new PPRankExpiredEvent($this->plugin, $player, $levelName);
+                    $event = new PPRankExpiredEvent($this->plugin, $player, $levelName);
 
-                $this->plugin->getServer()->getPluginManager()->callEvent($event);
+                    $this->plugin->getServer()->getPluginManager()->callEvent($event);
+                }
             }
         }
     }

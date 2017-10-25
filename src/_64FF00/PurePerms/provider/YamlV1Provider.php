@@ -89,7 +89,7 @@ class YamlV1Provider implements ProviderInterface
                     "group" => $this->plugin->getDefaultGroup()->getName(),
                     "permissions" => [],
                     "worlds" => [],
-                    "time" => -1
+                    "expTime" => -1
                 ]);
             }
             else
@@ -112,7 +112,7 @@ class YamlV1Provider implements ProviderInterface
                     "group" => $this->plugin->getDefaultGroup()->getName(),
                     "permissions" => [],
                     "worlds" => [],
-                    "time" => -1
+                    "expTime" => -1
                 ];
             }
         }
